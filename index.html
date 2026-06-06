@@ -192,11 +192,25 @@
   transform: scale(1.03);
 }
 
-@media (max-width: 768px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
+@media (max-width:768px){
+
+  .hero-content{
+      flex-direction:column;
+      text-align:center;
+      gap:30px;
   }
+
+  .hero-right{
+      order:-1;
+      flex:none;
+  }
+
+  .profile-photo{
+      width:180px;
+      height:180px;
+  }
+
+}
 
   .hero-image {
     order: -1;
@@ -855,7 +869,7 @@
     </h1>
     <div class="hero-title">Cloud &amp; DevOps Manager · Microsoft Azure Specialist</div>
     <p class="hero-summary">
-      13 years in IT. 7+ in cloud. Designing resilient Azure architectures, leading
+      14 years in IT. 7+ in cloud. Designing resilient Azure architectures, leading
       platform engineering teams, and driving DevOps transformation for global enterprises.
       Based in Kolkata — building at scale, every day.
     </p>
